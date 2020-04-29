@@ -1,0 +1,325 @@
+@import "base";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background: $white;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  // color: lighten($black,40%);
+  color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  font-family: "Comic Neue", sans-serif;
+  &.menu-show {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+}
+a {
+  transition: 0.3s all ease;
+  color: $primary;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $primary;
+    outline: none !important;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: $primary;
+  color: $white;
+  height: 75px;
+}
+
+//JUMBOTRON
+.jumbotron {
+  background-color: white;
+  .jumbotron-img {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.bg-white {
+  background: $white !important;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary !important;
+}
+
+.bg-tertiary {
+  background: $tertiary;
+}
+
+.bg-quarternary {
+  background: $quarternary;
+}
+
+.bg-fifth {
+  background: $fifth;
+}
+
+.ftc-no-pb {
+  padding-bottom: 0 !important;
+}
+
+.btn {
+  cursor: pointer;
+  @include border-radius(40px);
+  box-shadow: none !important;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &.btn-primary {
+    background: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    &:hover {
+      border: 1px solid $primary;
+      background: transparent;
+      color: $primary;
+    }
+    &.btn-outline-primary {
+      border: 1px solid $primary;
+      background: transparent;
+      color: $primary;
+      &:hover {
+        border: 1px solid transparent;
+        background: $primary;
+        color: $white;
+      }
+    }
+  }
+  &.btn-primary-white {
+    background: $primary;
+    border: 3px solid $white;
+    color: $white;
+    &:hover {
+      border: 3px solid $white;
+      background-color: $white;
+      color: $primary;
+    }
+  }
+  &.btn-white {
+    background: $white;
+    border: 1px solid $white;
+    color: $primary;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $white;
+      color: $primary;
+    }
+    &.btn-outline-white {
+      border-color: rgba($white, 0.8);
+      background: none;
+      @include border-radius(30px);
+      border-width: 1px;
+      color: $white;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        border-color: $white;
+        color: $primary;
+      }
+    }
+  }
+  &.btn-secondary {
+    background: $secondary;
+    border: 1px solid $secondary;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $secondary;
+      color: $white;
+    }
+  }
+  &.btn-tertiary {
+    background: $tertiary;
+    border: 1px solid $tertiary;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $tertiary;
+      color: $white;
+    }
+  }
+  &.btn-quarternary {
+    background: $quarternary;
+    border: 1px solid $quarternary;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $quarternary;
+      color: $white;
+    }
+  }
+  &.btn-secondary-white {
+    background: $secondary;
+    border: 3px solid $white;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 3px solid $white;
+      background-color: $white;
+      color: $secondary;
+    }
+  }
+  &.btn-tertiary-white {
+    background: $tertiary;
+    border: 3px solid $white;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 3px solid $white;
+      background-color: $white;
+      color: $tertiary;
+    }
+  }
+  &.btn-quarternary-white {
+    background: $quarternary;
+    border: 3px solid $white;
+    color: $white;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 3px solid $white;
+      background-color: $white;
+      color: $quarternary;
+    }
+  }
+}
+
+.card {
+  min-height: 37rem;
+  box-shadow: 0px 10px 8px rgba($black, 0.5);
+  color: white;
+  transition: all 0.3s;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black, 0.5);
+  }
+
+  &-header {
+    color: white;
+  }
+
+  &-1 {
+    background-color: $primary;
+  }
+  &-2 {
+    background-color: $secondary;
+  }
+  &-3 {
+    background-color: $tertiary;
+  }
+  &-4 {
+    background-color: $quarternary;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.ftco-services {
+  padding: 0 0 5em 0;
+  @include media-breakpoint-up(md) {
+    // margin-top: -50px;
+  }
+  .services {
+    display: block;
+    width: 100%;
+    position: relative;
+    @include transition(0.3s);
+    .icon {
+      line-height: 1.3;
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: $white;
+      margin: 0 auto;
+      margin-top: -60px;
+      @include border-radius(50%);
+      span {
+        font-size: 50px;
+        color: $primary;
+      }
+    }
+    .media-body {
+      color: rgba(255, 255, 255, 0.8);
+      @include media-breakpoint-down(sm) {
+        padding-bottom: 3.5em !important;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 22px;
+        color: $white;
+      }
+    }
+  }
+}
+.services-2 {
+  margin-bottom: 30px;
+  .icon {
+    line-height: 1;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: $primary;
+    @include border-radius(50%);
+    span {
+      font-size: 30px;
+      color: $white;
+    }
+  }
+  .text {
+    width: calc(100% - 80px);
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+//FOOTTER
+footer {
+  background-color: $primary;
+}
