@@ -12838,70 +12838,105 @@ h5,
   color: white;
 }
 
-/* line 55, src/sass/main.scss */
-.galleria {
-  width: 100%;
-  height: 450px;
-  background: #000;
-}
-
-/* line 61, src/sass/main.scss */
-.img-height {
-  height: 215px;
-}
-
-/* line 66, src/sass/main.scss */
+/* line 56, src/sass/main.scss */
 .jumbotron {
   background-color: white;
 }
 
-/* line 68, src/sass/main.scss */
+/* line 58, src/sass/main.scss */
 .jumbotron .jumbotron-img {
-  width: 40vw;
+  width: 55vw;
   height: auto;
 }
 
-/* line 74, src/sass/main.scss */
+/* line 65, src/sass/main.scss */
+#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
+  max-width: 1920px;
+}
+
+/* line 67, src/sass/main.scss */
+#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
+  position: relative;
+  display: block;
+  max-height: 250px;
+}
+
+/* line 72, src/sass/main.scss */
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/* line 80, src/sass/main.scss */
 .container {
   max-width: 1230px;
 }
 
-/* line 78, src/sass/main.scss */
+/* line 84, src/sass/main.scss */
 .bg-white {
   background: #fff !important;
 }
 
-/* line 82, src/sass/main.scss */
+/* line 88, src/sass/main.scss */
 .bg-primary {
   background: #1eaaf1;
 }
 
-/* line 86, src/sass/main.scss */
+/* line 92, src/sass/main.scss */
 .bg-secondary {
   background: #fda638 !important;
 }
 
-/* line 90, src/sass/main.scss */
+/* line 96, src/sass/main.scss */
 .bg-tertiary {
   background: #8cc152;
 }
 
-/* line 94, src/sass/main.scss */
+/* line 100, src/sass/main.scss */
 .bg-quarternary {
   background: #f1453d;
 }
 
-/* line 98, src/sass/main.scss */
+/* line 104, src/sass/main.scss */
 .bg-fifth {
   background: #5d50c6;
 }
 
-/* line 102, src/sass/main.scss */
+/* line 107, src/sass/main.scss */
+.txt-white {
+  color: #fff !important;
+}
+
+/* line 111, src/sass/main.scss */
+.txt-primary {
+  color: #1eaaf1;
+}
+
+/* line 115, src/sass/main.scss */
+.txt-secondary {
+  color: #fda638 !important;
+}
+
+/* line 119, src/sass/main.scss */
+.txt-tertiary {
+  color: #8cc152;
+}
+
+/* line 123, src/sass/main.scss */
+.txt-quarternary {
+  color: #f1453d;
+}
+
+/* line 127, src/sass/main.scss */
+.txt-fifth {
+  color: #5d50c6;
+}
+
+/* line 131, src/sass/main.scss */
 .ftc-no-pb {
   padding-bottom: 0 !important;
 }
 
-/* line 106, src/sass/main.scss */
+/* line 135, src/sass/main.scss */
 .btn {
   cursor: pointer;
   border-radius: 40px;
@@ -12909,67 +12944,67 @@ h5,
           box-shadow: none !important;
 }
 
-/* line 110, src/sass/main.scss */
+/* line 139, src/sass/main.scss */
 .btn:hover, .btn:active, .btn:focus {
   outline: none;
 }
 
-/* line 115, src/sass/main.scss */
+/* line 144, src/sass/main.scss */
 .btn.btn-primary {
   background: #1eaaf1;
   border: 1px solid #1eaaf1;
   color: #fff;
 }
 
-/* line 119, src/sass/main.scss */
+/* line 148, src/sass/main.scss */
 .btn.btn-primary:hover {
   border: 1px solid #1eaaf1;
   background: transparent;
   color: #1eaaf1;
 }
 
-/* line 124, src/sass/main.scss */
+/* line 153, src/sass/main.scss */
 .btn.btn-primary.btn-outline-primary {
   border: 1px solid #1eaaf1;
   background: transparent;
   color: #1eaaf1;
 }
 
-/* line 128, src/sass/main.scss */
+/* line 157, src/sass/main.scss */
 .btn.btn-primary.btn-outline-primary:hover {
   border: 1px solid transparent;
   background: #1eaaf1;
   color: #fff;
 }
 
-/* line 135, src/sass/main.scss */
+/* line 164, src/sass/main.scss */
 .btn.btn-primary-white {
   background: #1eaaf1;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 139, src/sass/main.scss */
+/* line 168, src/sass/main.scss */
 .btn.btn-primary-white:hover {
   border: 3px solid #fff;
   background-color: #fff;
   color: #1eaaf1;
 }
 
-/* line 145, src/sass/main.scss */
+/* line 174, src/sass/main.scss */
 .btn.btn-white {
   background: #fff;
   border: 1px solid #fff;
   color: #1eaaf1;
 }
 
-/* line 149, src/sass/main.scss */
+/* line 178, src/sass/main.scss */
 .btn.btn-white:hover, .btn.btn-white:focus, .btn.btn-white:active {
   border: 1px solid #fff;
   color: #1eaaf1;
 }
 
-/* line 155, src/sass/main.scss */
+/* line 184, src/sass/main.scss */
 .btn.btn-white.btn-outline-white {
   border-color: rgba(255, 255, 255, 0.8);
   background: none;
@@ -12978,97 +13013,96 @@ h5,
   color: #fff;
 }
 
-/* line 161, src/sass/main.scss */
+/* line 190, src/sass/main.scss */
 .btn.btn-white.btn-outline-white:hover, .btn.btn-white.btn-outline-white:focus, .btn.btn-white.btn-outline-white:active {
   background: #fff;
   border-color: #fff;
   color: #1eaaf1;
 }
 
-/* line 170, src/sass/main.scss */
+/* line 199, src/sass/main.scss */
 .btn.btn-secondary {
   background: #fda638;
   border: 1px solid #fda638;
   color: #fff;
 }
 
-/* line 174, src/sass/main.scss */
+/* line 203, src/sass/main.scss */
 .btn.btn-secondary:hover, .btn.btn-secondary:focus, .btn.btn-secondary:active {
   border: 1px solid #fda638;
   color: #fff;
 }
 
-/* line 181, src/sass/main.scss */
+/* line 210, src/sass/main.scss */
 .btn.btn-tertiary {
   background: #8cc152;
   border: 1px solid #8cc152;
   color: #fff;
 }
 
-/* line 185, src/sass/main.scss */
+/* line 214, src/sass/main.scss */
 .btn.btn-tertiary:hover, .btn.btn-tertiary:focus, .btn.btn-tertiary:active {
   border: 1px solid #8cc152;
   color: #fff;
 }
 
-/* line 192, src/sass/main.scss */
+/* line 221, src/sass/main.scss */
 .btn.btn-quarternary {
   background: #f1453d;
   border: 1px solid #f1453d;
   color: #fff;
 }
 
-/* line 196, src/sass/main.scss */
+/* line 225, src/sass/main.scss */
 .btn.btn-quarternary:hover, .btn.btn-quarternary:focus, .btn.btn-quarternary:active {
   border: 1px solid #f1453d;
   color: #fff;
 }
 
-/* line 203, src/sass/main.scss */
+/* line 232, src/sass/main.scss */
 .btn.btn-secondary-white {
   background: #fda638;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 207, src/sass/main.scss */
+/* line 236, src/sass/main.scss */
 .btn.btn-secondary-white:hover, .btn.btn-secondary-white:focus, .btn.btn-secondary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #fda638;
 }
 
-/* line 215, src/sass/main.scss */
+/* line 244, src/sass/main.scss */
 .btn.btn-tertiary-white {
   background: #8cc152;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 219, src/sass/main.scss */
+/* line 248, src/sass/main.scss */
 .btn.btn-tertiary-white:hover, .btn.btn-tertiary-white:focus, .btn.btn-tertiary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #8cc152;
 }
 
-/* line 227, src/sass/main.scss */
+/* line 256, src/sass/main.scss */
 .btn.btn-quarternary-white {
   background: #f1453d;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 231, src/sass/main.scss */
+/* line 260, src/sass/main.scss */
 .btn.btn-quarternary-white:hover, .btn.btn-quarternary-white:focus, .btn.btn-quarternary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #f1453d;
 }
 
-/* line 241, src/sass/main.scss */
+/* line 270, src/sass/main.scss */
 .card {
-  min-height: 32rem;
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
   color: white;
@@ -13077,7 +13111,7 @@ h5,
   position: relative;
 }
 
-/* line 248, src/sass/main.scss */
+/* line 277, src/sass/main.scss */
 .card:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -13085,42 +13119,47 @@ h5,
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
-/* line 253, src/sass/main.scss */
+/* line 282, src/sass/main.scss */
 .card-header {
   color: white;
 }
 
-/* line 257, src/sass/main.scss */
+/* line 286, src/sass/main.scss */
 .card-1 {
   background-color: #1eaaf1;
 }
 
-/* line 260, src/sass/main.scss */
+/* line 289, src/sass/main.scss */
 .card-2 {
   background-color: #fda638;
 }
 
-/* line 263, src/sass/main.scss */
+/* line 292, src/sass/main.scss */
 .card-3 {
   background-color: #8cc152;
 }
 
-/* line 266, src/sass/main.scss */
+/* line 295, src/sass/main.scss */
 .card-4 {
   background-color: #f1453d;
 }
 
-/* line 270, src/sass/main.scss */
+/* line 298, src/sass/main.scss */
+.card-5 {
+  background-color: #5d50c6;
+}
+
+/* line 302, src/sass/main.scss */
 .card ul {
   list-style: none;
 }
 
-/* line 275, src/sass/main.scss */
+/* line 307, src/sass/main.scss */
 .ftco-services {
   padding: 0 0 5em 0;
 }
 
-/* line 280, src/sass/main.scss */
+/* line 312, src/sass/main.scss */
 .ftco-services .services {
   display: block;
   width: 100%;
@@ -13130,14 +13169,14 @@ h5,
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 280, src/sass/main.scss */
+  /* line 312, src/sass/main.scss */
   .ftco-services .services {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-/* line 285, src/sass/main.scss */
+/* line 317, src/sass/main.scss */
 .ftco-services .services .icon {
   line-height: 1.3;
   position: relative;
@@ -13149,37 +13188,37 @@ h5,
   border-radius: 50%;
 }
 
-/* line 294, src/sass/main.scss */
+/* line 326, src/sass/main.scss */
 .ftco-services .services .icon span {
   font-size: 50px;
   color: #1eaaf1;
 }
 
-/* line 299, src/sass/main.scss */
+/* line 331, src/sass/main.scss */
 .ftco-services .services .media-body {
   color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 767.98px) {
-  /* line 299, src/sass/main.scss */
+  /* line 331, src/sass/main.scss */
   .ftco-services .services .media-body {
     padding-bottom: 3.5em !important;
   }
 }
 
-/* line 304, src/sass/main.scss */
+/* line 336, src/sass/main.scss */
 .ftco-services .services .media-body h3 {
   font-weight: 500;
   font-size: 22px;
   color: #fff;
 }
 
-/* line 312, src/sass/main.scss */
+/* line 344, src/sass/main.scss */
 .services-2 {
   margin-bottom: 30px;
 }
 
-/* line 314, src/sass/main.scss */
+/* line 346, src/sass/main.scss */
 .services-2 .icon {
   line-height: 1;
   position: relative;
@@ -13189,24 +13228,24 @@ h5,
   border-radius: 50%;
 }
 
-/* line 321, src/sass/main.scss */
+/* line 353, src/sass/main.scss */
 .services-2 .icon span {
   font-size: 30px;
   color: #fff;
 }
 
-/* line 326, src/sass/main.scss */
+/* line 358, src/sass/main.scss */
 .services-2 .text {
   width: calc(100% - 80px);
 }
 
-/* line 328, src/sass/main.scss */
+/* line 360, src/sass/main.scss */
 .services-2 .text h3 {
   font-size: 20px;
   font-weight: 500;
 }
 
-/* line 336, src/sass/main.scss */
+/* line 368, src/sass/main.scss */
 footer {
   background-color: #1eaaf1;
 }
