@@ -12845,98 +12845,153 @@ h5,
 
 /* line 58, src/sass/main.scss */
 .jumbotron .jumbotron-img {
-  width: 47vw;
+  width: 40vw;
   height: auto;
 }
 
 /* line 65, src/sass/main.scss */
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
-  max-width: 1920px;
+.ftco-gallery {
+  padding: 0;
 }
 
-/* line 67, src/sass/main.scss */
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
-  position: relative;
+/* line 68, src/sass/main.scss */
+.gallery {
   display: block;
-  max-height: 250px;
+  height: 300px;
+  position: relative;
 }
 
 /* line 72, src/sass/main.scss */
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+.gallery .icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  z-index: 0;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 72, src/sass/main.scss */
+  .gallery .icon {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 /* line 80, src/sass/main.scss */
+.gallery .icon:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: #1eaaf1;
+  z-index: -1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 80, src/sass/main.scss */
+  .gallery .icon:after {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+/* line 93, src/sass/main.scss */
+.gallery .icon span {
+  color: #fff;
+}
+
+/* line 99, src/sass/main.scss */
+.gallery:hover .icon, .gallery:focus .icon {
+  opacity: 1;
+}
+
+/* line 101, src/sass/main.scss */
+.gallery:hover .icon:after, .gallery:focus .icon:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/* line 108, src/sass/main.scss */
 .container {
   max-width: 1230px;
 }
 
-/* line 84, src/sass/main.scss */
+/* line 112, src/sass/main.scss */
 .bg-white {
   background: #fff !important;
 }
 
-/* line 88, src/sass/main.scss */
+/* line 116, src/sass/main.scss */
 .bg-primary {
   background: #1eaaf1;
 }
 
-/* line 92, src/sass/main.scss */
+/* line 120, src/sass/main.scss */
 .bg-secondary {
   background: #fda638 !important;
 }
 
-/* line 96, src/sass/main.scss */
+/* line 124, src/sass/main.scss */
 .bg-tertiary {
   background: #8cc152;
 }
 
-/* line 100, src/sass/main.scss */
+/* line 128, src/sass/main.scss */
 .bg-quarternary {
   background: #f1453d;
 }
 
-/* line 104, src/sass/main.scss */
+/* line 132, src/sass/main.scss */
 .bg-fifth {
   background: #5d50c6;
 }
 
-/* line 107, src/sass/main.scss */
+/* line 135, src/sass/main.scss */
 .txt-white {
   color: #fff !important;
 }
 
-/* line 111, src/sass/main.scss */
+/* line 139, src/sass/main.scss */
 .txt-primary {
   color: #1eaaf1;
 }
 
-/* line 115, src/sass/main.scss */
+/* line 143, src/sass/main.scss */
 .txt-secondary {
   color: #fda638 !important;
 }
 
-/* line 119, src/sass/main.scss */
+/* line 147, src/sass/main.scss */
 .txt-tertiary {
   color: #8cc152;
 }
 
-/* line 123, src/sass/main.scss */
+/* line 151, src/sass/main.scss */
 .txt-quarternary {
   color: #f1453d;
 }
 
-/* line 127, src/sass/main.scss */
+/* line 155, src/sass/main.scss */
 .txt-fifth {
   color: #5d50c6;
 }
 
-/* line 131, src/sass/main.scss */
+/* line 159, src/sass/main.scss */
 .ftc-no-pb {
   padding-bottom: 0 !important;
 }
 
-/* line 135, src/sass/main.scss */
+/* line 163, src/sass/main.scss */
 .btn {
   cursor: pointer;
   border-radius: 40px;
@@ -12944,67 +12999,67 @@ h5,
           box-shadow: none !important;
 }
 
-/* line 139, src/sass/main.scss */
+/* line 167, src/sass/main.scss */
 .btn:hover, .btn:active, .btn:focus {
   outline: none;
 }
 
-/* line 144, src/sass/main.scss */
+/* line 172, src/sass/main.scss */
 .btn.btn-primary {
   background: #1eaaf1;
   border: 1px solid #1eaaf1;
   color: #fff;
 }
 
-/* line 148, src/sass/main.scss */
+/* line 176, src/sass/main.scss */
 .btn.btn-primary:hover {
   border: 1px solid #1eaaf1;
   background: transparent;
   color: #1eaaf1;
 }
 
-/* line 153, src/sass/main.scss */
+/* line 181, src/sass/main.scss */
 .btn.btn-primary.btn-outline-primary {
   border: 1px solid #1eaaf1;
   background: transparent;
   color: #1eaaf1;
 }
 
-/* line 157, src/sass/main.scss */
+/* line 185, src/sass/main.scss */
 .btn.btn-primary.btn-outline-primary:hover {
   border: 1px solid transparent;
   background: #1eaaf1;
   color: #fff;
 }
 
-/* line 164, src/sass/main.scss */
+/* line 192, src/sass/main.scss */
 .btn.btn-primary-white {
   background: #1eaaf1;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 168, src/sass/main.scss */
+/* line 196, src/sass/main.scss */
 .btn.btn-primary-white:hover {
   border: 3px solid #fff;
   background-color: #fff;
   color: #1eaaf1;
 }
 
-/* line 174, src/sass/main.scss */
+/* line 202, src/sass/main.scss */
 .btn.btn-white {
   background: #fff;
   border: 1px solid #fff;
   color: #1eaaf1;
 }
 
-/* line 178, src/sass/main.scss */
+/* line 206, src/sass/main.scss */
 .btn.btn-white:hover, .btn.btn-white:focus, .btn.btn-white:active {
   border: 1px solid #fff;
   color: #1eaaf1;
 }
 
-/* line 184, src/sass/main.scss */
+/* line 212, src/sass/main.scss */
 .btn.btn-white.btn-outline-white {
   border-color: rgba(255, 255, 255, 0.8);
   background: none;
@@ -13013,95 +13068,95 @@ h5,
   color: #fff;
 }
 
-/* line 190, src/sass/main.scss */
+/* line 218, src/sass/main.scss */
 .btn.btn-white.btn-outline-white:hover, .btn.btn-white.btn-outline-white:focus, .btn.btn-white.btn-outline-white:active {
   background: #fff;
   border-color: #fff;
   color: #1eaaf1;
 }
 
-/* line 199, src/sass/main.scss */
+/* line 227, src/sass/main.scss */
 .btn.btn-secondary {
   background: #fda638;
   border: 1px solid #fda638;
   color: #fff;
 }
 
-/* line 203, src/sass/main.scss */
+/* line 231, src/sass/main.scss */
 .btn.btn-secondary:hover, .btn.btn-secondary:focus, .btn.btn-secondary:active {
   border: 1px solid #fda638;
   color: #fff;
 }
 
-/* line 210, src/sass/main.scss */
+/* line 238, src/sass/main.scss */
 .btn.btn-tertiary {
   background: #8cc152;
   border: 1px solid #8cc152;
   color: #fff;
 }
 
-/* line 214, src/sass/main.scss */
+/* line 242, src/sass/main.scss */
 .btn.btn-tertiary:hover, .btn.btn-tertiary:focus, .btn.btn-tertiary:active {
   border: 1px solid #8cc152;
   color: #fff;
 }
 
-/* line 221, src/sass/main.scss */
+/* line 249, src/sass/main.scss */
 .btn.btn-quarternary {
   background: #f1453d;
   border: 1px solid #f1453d;
   color: #fff;
 }
 
-/* line 225, src/sass/main.scss */
+/* line 253, src/sass/main.scss */
 .btn.btn-quarternary:hover, .btn.btn-quarternary:focus, .btn.btn-quarternary:active {
   border: 1px solid #f1453d;
   color: #fff;
 }
 
-/* line 232, src/sass/main.scss */
+/* line 260, src/sass/main.scss */
 .btn.btn-secondary-white {
   background: #fda638;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 236, src/sass/main.scss */
+/* line 264, src/sass/main.scss */
 .btn.btn-secondary-white:hover, .btn.btn-secondary-white:focus, .btn.btn-secondary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #fda638;
 }
 
-/* line 244, src/sass/main.scss */
+/* line 272, src/sass/main.scss */
 .btn.btn-tertiary-white {
   background: #8cc152;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 248, src/sass/main.scss */
+/* line 276, src/sass/main.scss */
 .btn.btn-tertiary-white:hover, .btn.btn-tertiary-white:focus, .btn.btn-tertiary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #8cc152;
 }
 
-/* line 256, src/sass/main.scss */
+/* line 284, src/sass/main.scss */
 .btn.btn-quarternary-white {
   background: #f1453d;
   border: 3px solid #fff;
   color: #fff;
 }
 
-/* line 260, src/sass/main.scss */
+/* line 288, src/sass/main.scss */
 .btn.btn-quarternary-white:hover, .btn.btn-quarternary-white:focus, .btn.btn-quarternary-white:active {
   border: 3px solid #fff;
   background-color: #fff;
   color: #f1453d;
 }
 
-/* line 270, src/sass/main.scss */
+/* line 298, src/sass/main.scss */
 .card {
   -webkit-box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
@@ -13111,7 +13166,7 @@ h5,
   position: relative;
 }
 
-/* line 277, src/sass/main.scss */
+/* line 305, src/sass/main.scss */
 .card:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -13119,47 +13174,47 @@ h5,
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
-/* line 282, src/sass/main.scss */
+/* line 310, src/sass/main.scss */
 .card-header {
   color: white;
 }
 
-/* line 286, src/sass/main.scss */
+/* line 314, src/sass/main.scss */
 .card-1 {
   background-color: #1eaaf1;
 }
 
-/* line 289, src/sass/main.scss */
+/* line 317, src/sass/main.scss */
 .card-2 {
   background-color: #fda638;
 }
 
-/* line 292, src/sass/main.scss */
+/* line 320, src/sass/main.scss */
 .card-3 {
   background-color: #8cc152;
 }
 
-/* line 295, src/sass/main.scss */
+/* line 323, src/sass/main.scss */
 .card-4 {
   background-color: #f1453d;
 }
 
-/* line 298, src/sass/main.scss */
+/* line 326, src/sass/main.scss */
 .card-5 {
   background-color: #5d50c6;
 }
 
-/* line 302, src/sass/main.scss */
+/* line 330, src/sass/main.scss */
 .card ul {
   list-style: none;
 }
 
-/* line 307, src/sass/main.scss */
+/* line 335, src/sass/main.scss */
 .ftco-services {
   padding: 0 0 5em 0;
 }
 
-/* line 312, src/sass/main.scss */
+/* line 340, src/sass/main.scss */
 .ftco-services .services {
   display: block;
   width: 100%;
@@ -13169,14 +13224,14 @@ h5,
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* line 312, src/sass/main.scss */
+  /* line 340, src/sass/main.scss */
   .ftco-services .services {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-/* line 317, src/sass/main.scss */
+/* line 345, src/sass/main.scss */
 .ftco-services .services .icon {
   line-height: 1.3;
   position: relative;
@@ -13188,37 +13243,37 @@ h5,
   border-radius: 50%;
 }
 
-/* line 326, src/sass/main.scss */
+/* line 354, src/sass/main.scss */
 .ftco-services .services .icon span {
   font-size: 50px;
   color: #1eaaf1;
 }
 
-/* line 331, src/sass/main.scss */
+/* line 359, src/sass/main.scss */
 .ftco-services .services .media-body {
   color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 767.98px) {
-  /* line 331, src/sass/main.scss */
+  /* line 359, src/sass/main.scss */
   .ftco-services .services .media-body {
     padding-bottom: 3.5em !important;
   }
 }
 
-/* line 336, src/sass/main.scss */
+/* line 364, src/sass/main.scss */
 .ftco-services .services .media-body h3 {
   font-weight: 500;
   font-size: 22px;
   color: #fff;
 }
 
-/* line 344, src/sass/main.scss */
+/* line 372, src/sass/main.scss */
 .services-2 {
   margin-bottom: 30px;
 }
 
-/* line 346, src/sass/main.scss */
+/* line 374, src/sass/main.scss */
 .services-2 .icon {
   line-height: 1;
   position: relative;
@@ -13228,24 +13283,24 @@ h5,
   border-radius: 50%;
 }
 
-/* line 353, src/sass/main.scss */
+/* line 381, src/sass/main.scss */
 .services-2 .icon span {
   font-size: 30px;
   color: #fff;
 }
 
-/* line 358, src/sass/main.scss */
+/* line 386, src/sass/main.scss */
 .services-2 .text {
   width: calc(100% - 80px);
 }
 
-/* line 360, src/sass/main.scss */
+/* line 388, src/sass/main.scss */
 .services-2 .text h3 {
   font-size: 20px;
   font-weight: 500;
 }
 
-/* line 368, src/sass/main.scss */
+/* line 396, src/sass/main.scss */
 footer {
   background-color: #1eaaf1;
 }
