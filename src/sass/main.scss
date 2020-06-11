@@ -63,10 +63,14 @@ h5,
 
 //Gallery
 .ftco-gallery {
+  max-width: 1500px;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .gallery {
   display: block;
+
   height: 300px;
   position: relative;
   .icon {
