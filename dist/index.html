@@ -804,11 +804,11 @@
     </script>
     <script>
       $(document).ready(function () {
-        var modalShown = localStorage.getItem("modalShown");
+        var modalShown = sessionStorage.getItem("modalShown");
 
         if (!modalShown) {
           $("#myModal").modal("show");
-          localStorage.setItem("modalShown", 1);
+          sessionStorage.setItem("modalShown", 1);
         } else {
           $("myModal").modal("hide");
         }
