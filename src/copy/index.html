@@ -802,6 +802,11 @@
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <script>
+      $(document).ready(function () {
+        sessionStorage.removeItem("modalShown");
+      });
+    </script>
     <!-- <script>
       $(document).ready(function () {
         var modalShown = sessionStorage.getItem("modalShown");
