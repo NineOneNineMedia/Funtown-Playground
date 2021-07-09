@@ -802,10 +802,17 @@
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-    <script>
+    <!-- <script>
       $(document).ready(function () {
-        sessionStorage.removeItem("modalShown");
+        var modalShown = sessionStorage.getItem("modalShown");
+
+        if (!modalShown) {
+          $("#myModal").modal("show");
+          sessionStorage.setItem("modalShown", 1);
+        } else {
+          $("myModal").modal("hide");
+        }
       });
-    </script>
+    </script> -->
   </body>
 </html>
