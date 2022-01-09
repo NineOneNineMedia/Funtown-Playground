@@ -11,20 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/twelve/galleria.twelve.min.css"
-      integrity="sha256-xrfy/rMPWuLf8PUFml095hRs5qydbBKxzHQGz1duA70="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/miniml/galleria-inline.miniml.min.css" integrity="sha512-hXYYNmZr0ebPRd9WO08hyhePnf3MkBe5ZxDxugPfV/zuLAyaN6Ku/apmX/vsOb3Kb7oeaJZJ1xvPfZSg+lsc0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/main.min.css" rel="stylesheet" />
+    <style>
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {.galleria{ width: 350px; height: 300px; background: #fff}}
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {.galleria{ width: 700px; height: 400px; background: #fff}}
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -49,6 +51,9 @@
           </li>
           <li class="nav-item">
             <a data-scroll class="nav-link text-white" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link text-white" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
             <a data-scroll class="nav-link text-white" href="#contact">Contact</a>
@@ -314,7 +319,7 @@
               class="card-img-top"
               alt="..."
             />
-            <h3 class="card-header text-center">Bambino - $225</h3>
+            <h3 class="card-header text-center">Bambino - $275 + sales tax</h3>
             <div class="card-body text-center">
               <div class="row">
                 <div class="col-md-6">
@@ -358,7 +363,7 @@
               class="card-img-top"
               alt="..."
             />
-            <h3 class="card-header text-center">Small - $275</h3>
+            <h3 class="card-header text-center">Small - $305 + sales tax</h3>
             <div class="card-body text-center">
               <div class="row">
                 <div class="col-md-6">
@@ -402,7 +407,7 @@
               class="card-img-top"
               alt="..."
             />
-            <h3 class="card-header text-center">Medium - $335</h3>
+            <h3 class="card-header text-center">Medium - $395 + sales tax</h3>
             <div class="card-body text-center">
               <div class="row">
                 <div class="col-md-6">
@@ -417,6 +422,9 @@
                       <li>
                         <h6 class="text-white">
                           * The colors of fences and matting will vary upon availability.
+                        </h6>
+                        <h6 class="text-white">
+                          * Rainbow arch is currently not available at this time. 
                         </h6>
                       </li>
                     </ul>
@@ -445,12 +453,12 @@
         <div class="row justify-content-center">
           <div class="card border-0 card-5 mb-3 mx-3" style="max-width: 600px">
             <img
-              src="images/funtown/FTimage23.jpg"
+              src="images/funtown/FTimage23.JPG"
               style="max-width: 600px"
               class="card-img-top"
               alt="..."
             />
-            <h3 class="card-header text-center">Large Ball Pit Special - $315</h3>
+            <h3 class="card-header text-center">Large Ball Pit Special - $365 + sales tax</h3>
             <div class="card-body text-center">
               <div class="row">
                 <div class="col-md-6">
@@ -493,7 +501,7 @@
               class="card-img-top"
               alt="..."
             />
-            <h3 class="card-header text-center">Large - $395</h3>
+            <h3 class="card-header text-center">Large - $475 + sales tax</h3>
             <div class="card-body text-center">
               <div class="row">
                 <div class="col-md-6">
@@ -545,7 +553,10 @@
               />
               <div class="card-body">
                 <p class="card-text text-white text-center">
-                  Party Ball Pit 10’ x 6.5’ - $100
+                  Large Ball Pit 10’ x 6.5’ - $100
+                </p>
+                <p class="card-text text-white text-center">
+                  With one rainbow steps and a little tykes slide.
                 </p>
               </div>
             </div>
@@ -557,7 +568,7 @@
               />
               <div class="card-body">
                 <p class="card-text text-white text-center">
-                  Roller Coaster Ride On - $40
+                  Roller Coaster Ride On - $35
                 </p>
               </div>
             </div>
@@ -586,9 +597,35 @@
       </div>
     </section>
 
+    <section class="ftco-services pb-5" id="gallery">
+      <div class="container-wrap">
+        <div class="row justify-content-center mx-0">
+          <div class="col-md-8 mb-3 text-center">
+            <h1><b>Photo Gallery</b></h1>
+          </div>
+          <div class="galleria">
+            <img src="images/gallery/IMG-4821.jpg">
+            <img src="images/gallery/IMG-4961.jpg">
+            <img src="images/gallery/IMG-5820.jpg">
+            <img src="images/gallery/IMG-4608.jpg">
+            <img src="images/gallery/DE76FF84-8AEF-4302-A1F3-B52FA8519979.JPG">
+            <img src="images/gallery/C90796C2-C4E2-4AA8-8513-A6E765858FA4.JPG">
+            <img src="images/gallery/BF269A3D-E6DB-4DAB-B05C-3AFB38ED8FC5.JPG">
+            <img src="images/gallery/A0868A0C-DC29-4366-BD1F-C4D2E4FB8B67.JPG">
+            <img src="images/gallery/A3E983D4-F4BE-42F9-BCCC-055E324C2A1D.JPG">
+            <img src="images/gallery/68BBDEF0-8D52-4E69-BA2D-78E3D60F9F03.JPG">
+            <img src="images/gallery/60BD76A3-25A0-416C-8C99-BC51523B64C4.JPG">
+            <img src="images/gallery/6BB2DB2E-F297-4B90-A8B3-CE139241087C.JPG">
+            <img src="images/gallery/5A464DBF-D3FC-4316-BB2E-69E4B74F6FDE.JPG">
+            <img src="images/gallery/0F13273C-9C3D-4238-9761-F409389266B7.JPG">
+        </div>      
+        </div>
+      </div>
+    </section>
+
     <section class="ftco-services pb-0">
       <div class="container-wrap">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mx-auto">
           <div class="col-md-8 mb-3 text-center">
             <h1><b>Customer Reviews</b></h1>
           </div>
@@ -821,6 +858,19 @@
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <script>
+      (function() {
+          Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/miniml/galleria.miniml.min.js');
+          Galleria.run('.galleria', {
+    transition: "slide",
+    thumbCrop: false,
+    imageCrop: true,
+    carousel: false,
+    imagePan: false,
+    clicknext: true
+});
+      }());
+  </script>
     <!-- <script>
       $(document).ready(function () {
         var modalShown = sessionStorage.getItem("modalShown");
