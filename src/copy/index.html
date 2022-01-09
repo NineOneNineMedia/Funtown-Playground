@@ -19,7 +19,7 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/miniml/galleria-inline.miniml.min.css" integrity="sha512-hXYYNmZr0ebPRd9WO08hyhePnf3MkBe5ZxDxugPfV/zuLAyaN6Ku/apmX/vsOb3Kb7oeaJZJ1xvPfZSg+lsc0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/twelve/galleria-inline.twelve.min.css" integrity="sha512-hXYYNmZr0ebPRd9WO08hyhePnf3MkBe5ZxDxugPfV/zuLAyaN6Ku/apmX/vsOb3Kb7oeaJZJ1xvPfZSg+lsc0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/main.min.css" rel="stylesheet" />
     <style>
       /* Extra small devices (phones, 600px and down) */
@@ -860,14 +860,23 @@
     </script>
     <script>
       (function() {
-          Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/miniml/galleria.miniml.min.js');
+          Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/twelve/galleria.twelve.min.js');
           Galleria.run('.galleria', {
     transition: "slide",
-    thumbCrop: false,
+    transitionSpeed: 500,
     imageCrop: true,
-    carousel: false,
-    imagePan: false,
-    clicknext: true
+    thumbCrop: true,
+    carousel: true,
+    _locale: {
+        show_thumbnails: "Show thumbnails",
+        hide_thumbnails: "Hide thumbnails",
+        play: "Play slideshow",
+        pause: "Pause slideshow",
+        enter_fullscreen: "Enter fullscreen",
+        exit_fullscreen: "Exit fullscreen",
+        popout_image: "Popout image",
+        showing_image: "Showing image %s of %s"
+    }
 });
       }());
   </script>
